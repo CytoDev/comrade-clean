@@ -20,21 +20,21 @@ int main(int argc, char** argv) {
 
     cam[ 0] = "Коллега А:";
     cam[ 1] = "Здравствуй, коллега.";
-    cam[ 2] = " Tablet грязный";
-    cam[ 3] = " - Как чистый?";
+    cam[ 2] = " Планшет грязный";
+    cam[ 3] = " - как его очистить?";
     cbm[ 0] = "Коллега Б:";
     cbm[ 1] = "Посмотрите";
-    cbm[ 2] = ", это свет";
+    cbm[ 2] = ", он легкий";
     cbm[ 3] = ", как тарелка.";
-    cbm[ 4] = "Это трудно";
+    cbm[ 4] = "Твердый";
     cbm[ 5] = ", как тарелка.";
-	cbm[ 6] = "Это гладкий";
+	cbm[ 6] = "Гладкий";
     cbm[ 7] = ", как тарелка.";
-	cbm[ 8] = "Это грязно";
+	cbm[ 8] = "Грязный";
     cbm[ 9] = ", как тарелка!";
     cbm[10] = "Ответ очевиден";
     cbm[11] = ": вы моете его";
-    cbm[12] = ", как тарелка!";
+    cbm[12] = ", как тарелку!";
 
     if(argc > 1) {
 	    if(strcmp(argv[1], "ENG") == 0
@@ -64,17 +64,17 @@ int main(int argc, char** argv) {
 	        cam[ 3] = " - Kak chistyy?";
 	        cbm[ 0] = "Kollega B:";
 	        cbm[ 1] = "Posmotrite";
-	        cbm[ 2] = ", eto svet";
+	        cbm[ 2] = ", on legkiy";
 	        cbm[ 3] = ", kak tarelka.";
-	        cbm[ 4] = "Eto trudno";
+	        cbm[ 4] = "Tverdyy";
 	        cbm[ 5] = ", kak tarelka.";
-	        cbm[ 6] = "Eto gladkiy";
+	        cbm[ 6] = "Gladkiy";
 	        cbm[ 7] = ", kak tarelka.";
-	        cbm[ 8] = "Eto gryazno";
+	        cbm[ 8] = "Gryaznyy";
 	        cbm[ 9] = ", kak tarelka!";
 	        cbm[ 10] = "Otvet ocheviden";
 	        cbm[ 11] = ": vy moyete yego";
-	        cbm[ 12] = ", kak tarelka!";
+	        cbm[ 12] = ", kak tarelku!";
 	    } else if(strcmp(argv[1], "credits") == 0) {
 			typeText("\n╔══════════════════════════════════════════════════════════════════════════════╗", 1);
 			typeText("\n║        _/_/_/  _/_/_/    _/_/_/_/  _/_/_/    _/_/_/  _/_/_/_/_/    _/_/_/    ║", 5);
@@ -87,6 +87,7 @@ int main(int argc, char** argv) {
 			typeText("\n╟──────────────────────────────────────┴───────────────────────────────────────╢", 1);
 			typeText("\n║                                - thanks to -                                 ║", 5);
 			typeText("\n║ /u/Gambatte on reddit, for his awesome comment in /r/talesfromtechsupport.   ║", 5);
+			typeText("\n║ /u/zSync1 on reddit, corrections of my failing Russian.                      ║", 5);
 			typeText("\n║                                                                              ║", 1);
 			typeText("\n║                            - special thanks to -                             ║", 5);
 			typeText("\n║ Colin Percival, for his UTF-8 character counting tutorial.                   ║", 5);
@@ -97,7 +98,7 @@ int main(int argc, char** argv) {
             typeText("\n║ My dad, for conceiving me                                                    ║", 5);
             typeText("\n║ My mom, for giving birth to me                                               ║", 5);
 			typeText("\n╚══════════════════════════════════════════════════════════════════════════════╝", 1);
-			printf("\n\n");
+			printf("\n");
 	        return 1;
 	    }
 	}
